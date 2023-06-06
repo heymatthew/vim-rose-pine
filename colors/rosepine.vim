@@ -48,21 +48,38 @@ else
   call extend(v:colornames, { 'highlight_high': '#cecacd' })
 endif
 
-highlight Normal guifg=text guibg=base
-highlight ColorColumn guifg=text guibg=highlight_low
+highlight Normal      guifg=text guibg=base
+
+" Language features
+highlight Type        guifg=text guibg=base
+highlight String      guifg=text guibg=base
+highlight Character   guifg=text guibg=base
+highlight Number      guifg=text guibg=base
+highlight Boolean     guifg=text guibg=base
+highlight Float       guifg=text guibg=base
+highlight Constant    guifg=text guibg=base
+highlight PreProc     guifg=text guibg=base
+highlight Statement   guifg=text guibg=base
+highlight Identifier  guifg=text guibg=base
+
+highlight Special     guifg=foam guibg=base
 
 " Autocomplete menu
-highlight PMenu guifg=muted guibg=highlight_low
-highlight PmenuSel guifg=text guibg=highlight_med
+highlight PMenu       guifg=muted guibg=highlight_low
+highlight PmenuSel    guifg=text  guibg=highlight_med
 
 " Curosor, boundaries and columns
-highlight Cursor guifg=text guifg=rose
-highlight link lCursor Cursor
-" TODO Scrollbar
+highlight Cursor      guifg=text guifg=rose
+highlight lCursor     guifg=text guifg=rose
+highlight ColorColumn guifg=text guibg=highlight_low
 
-" Comments, TODO, and FIXME:w
+" Comments
+highlight Comment guifg=muted guibg=base
+" highlight Todo guifg=subtle guifg=base
 
-" TODO Windowing
+" TODO:
+
+" Windowing
 
 " highlight CursorLine
 " VertSplit TabLine TabLineFill
