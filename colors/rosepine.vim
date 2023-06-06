@@ -73,6 +73,9 @@ highlight Cursor      guifg=text guifg=rose
 highlight lCursor     guifg=text guifg=rose
 highlight ColorColumn guifg=text guibg=highlight_low
 
+highlight Search      guifg=foam guibg=highlight_med
+highlight CurSearch   guifg=text guibg=pine
+
 " Comments
 highlight Comment guifg=muted guibg=base
 " highlight Todo guifg=subtle guifg=base
