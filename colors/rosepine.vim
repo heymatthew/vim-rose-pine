@@ -50,3 +50,20 @@ endif
 
 highlight Normal guifg=text guibg=base
 highlight ColorColumn guifg=text guibg=highlight_low
+
+" Autocomplete menu
+highlight PMenu guifg=muted guibg=highlight_low
+highlight PmenuSel guifg=text guibg=highlight_med
+
+" Curosor, boundaries and columns
+highlight Cursor guifg=text guifg=rose
+highlight link lCursor Cursor
+" TODO Scrollbar
+
+" Comments, TODO, and FIXME:w
+
+" TODO Windowing
+
+" highlight CursorLine
+" VertSplit TabLine TabLineFill
+" TabLineSel
