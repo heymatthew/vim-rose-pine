@@ -14,38 +14,38 @@ endif
 
 if &background == 'dark'
   " Rosé Pine Moon
-  call extend(v:colornames, { 'base': '#232136' })
-  call extend(v:colornames, { 'surface': '#2a273f' })
-  call extend(v:colornames, { 'overlay': '#393552' })
-  call extend(v:colornames, { 'muted': '#6e6a86' })
-  call extend(v:colornames, { 'subtle': '#908caa' })
-  call extend(v:colornames, { 'text': '#e0def4' })
-  call extend(v:colornames, { 'love': '#eb6f92' })
-  call extend(v:colornames, { 'gold': '#f6c177' })
-  call extend(v:colornames, { 'rose': '#ea9a97' })
-  call extend(v:colornames, { 'pine': '#3e8fb0' })
-  call extend(v:colornames, { 'foam': '#9ccfd8' })
-  call extend(v:colornames, { 'iris': '#c4a7e7' })
-  call extend(v:colornames, { 'highlight_low': '#2a283e' })
-  call extend(v:colornames, { 'highlight_med': '#44415a' })
-  call extend(v:colornames, { 'highlight_high': '#56526e' })
+  let v:colornames['base'] = '#232136'
+  let v:colornames['surface'] = '#2a273f'
+  let v:colornames['overlay'] = '#393552'
+  let v:colornames['muted'] = '#6e6a86'
+  let v:colornames['subtle'] = '#908caa'
+  let v:colornames['text'] = '#e0def4'
+  let v:colornames['love'] = '#eb6f92'
+  let v:colornames['gold'] = '#f6c177'
+  let v:colornames['rose'] = '#ea9a97'
+  let v:colornames['pine'] = '#3e8fb0'
+  let v:colornames['foam'] = '#9ccfd8'
+  let v:colornames['iris'] = '#c4a7e7'
+  let v:colornames['highlight_low'] = '#2a283e'
+  let v:colornames['highlight_med'] = '#44415a'
+  let v:colornames['highlight_high'] = '#56526e'
 else
   " Rosé Pine Dawn
-  call extend(v:colornames, { 'base': '#faf4ed' })
-  call extend(v:colornames, { 'surface': '#fffaf3' })
-  call extend(v:colornames, { 'overlay': '#f2e9e1' })
-  call extend(v:colornames, { 'muted': '#9893a5' })
-  call extend(v:colornames, { 'subtle': '#797593' })
-  call extend(v:colornames, { 'text': '#575279' })
-  call extend(v:colornames, { 'love': '#b4637a' })
-  call extend(v:colornames, { 'gold': '#ea9d34' })
-  call extend(v:colornames, { 'rose': '#d7827e' })
-  call extend(v:colornames, { 'pine': '#286983' })
-  call extend(v:colornames, { 'foam': '#56949f' })
-  call extend(v:colornames, { 'iris': '#907aa9' })
-  call extend(v:colornames, { 'highlight_low': '#f4ede8' })
-  call extend(v:colornames, { 'highlight_med': '#dfdad9' })
-  call extend(v:colornames, { 'highlight_high': '#cecacd' })
+  let v:colornames['base'] = '#faf4ed'
+  let v:colornames['surface'] = '#fffaf3'
+  let v:colornames['overlay'] = '#f2e9e1'
+  let v:colornames['muted'] = '#9893a5'
+  let v:colornames['subtle'] = '#797593'
+  let v:colornames['text'] = '#575279'
+  let v:colornames['love'] = '#b4637a'
+  let v:colornames['gold'] = '#ea9d34'
+  let v:colornames['rose'] = '#d7827e'
+  let v:colornames['pine'] = '#286983'
+  let v:colornames['foam'] = '#56949f'
+  let v:colornames['iris'] = '#907aa9'
+  let v:colornames['highlight_low'] = '#f4ede8'
+  let v:colornames['highlight_med'] = '#dfdad9'
+  let v:colornames['highlight_high'] = '#cecacd'
 endif
 
 highlight Normal      guifg=text guibg=base
