@@ -1,4 +1,4 @@
-# Blinkenlights - Minimalistic themes for Vim and Neovim
+# Blinkenlights - Minimalistic themes for [n]Vim
 
 A personal take on simplicity using colour to communicate a small number of
 semantic elements. These themes assume you're using a terminal that can support
