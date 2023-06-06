@@ -73,16 +73,21 @@ highlight Cursor      guifg=text guifg=rose
 highlight lCursor     guifg=text guifg=rose
 highlight ColorColumn guifg=text guibg=highlight_low
 
-highlight Search      guifg=foam guibg=highlight_med
+highlight Search      guifg=base guibg=foam
 highlight CurSearch   guifg=text guibg=pine
 
-" Comments
-highlight Comment guifg=muted guibg=base
-" highlight Todo guifg=subtle guifg=base
+" Errors
+highlight SpellBad    guifg=rose guibg=base
 
-" TODO:
+" Comments
+highlight Comment guifg=text guibg=base
+" highlight Todo    guifg=gold guibg=base
+
+" TODO: Hello
 
 " Windowing
+" highlight VertSplit guifg=text guibg=highlight_low
+highlight LineNr    guifg=muted guibg=base
 
 " highlight CursorLine
 " VertSplit TabLine TabLineFill
