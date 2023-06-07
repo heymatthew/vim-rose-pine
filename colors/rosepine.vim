@@ -86,10 +86,8 @@ highlight ErrorMsg    guifg=rose guibg=base cterm=underline gui=underline term=u
 highlight Error       guifg=rose guibg=base cterm=underline gui=underline term=underline
 
 " Comments
-highlight Comment guifg=text guibg=base
-" highlight Todo    guifg=gold guibg=base
-
-" TODO: Hello
+highlight Comment   guifg=muted guibg=base
+highlight Todo      guifg=gold guibg=base cterm=underline gui=underline term=underline
 
 " Windowing
 " highlight VertSplit guifg=text guibg=highlight_low
