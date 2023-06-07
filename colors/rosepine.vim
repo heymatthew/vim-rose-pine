@@ -80,7 +80,9 @@ highlight Search      guifg=base guibg=foam
 highlight CurSearch   guifg=base guibg=pine
 
 " Errors
-highlight SpellBad    guifg=rose guibg=base
+highlight SpellBad    guifg=rose guibg=base cterm=underline gui=underline term=underline
+highlight ErrorMsg    guifg=rose guibg=base cterm=underline gui=underline term=underline
+highlight Error       guifg=rose guibg=base cterm=underline gui=underline term=underline
 
 " Comments
 highlight Comment guifg=text guibg=base
