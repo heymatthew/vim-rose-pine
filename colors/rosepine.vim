@@ -64,7 +64,8 @@ highlight Type        guifg=text guibg=base
 highlight PreProc     guifg=text guibg=base
 highlight Special     guifg=text guibg=base
 
-highlight Special     guifg=foam guibg=base
+" File navigation
+highlight Directory   guifg=pine guibg=base
 
 " Autocomplete menu
 highlight PMenu       guifg=muted guibg=highlight_low
