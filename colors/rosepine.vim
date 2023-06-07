@@ -90,8 +90,14 @@ highlight Comment   guifg=muted guibg=base
 highlight Todo      guifg=gold guibg=base cterm=underline gui=underline term=underline
 
 " Windowing
-" highlight VertSplit guifg=text guibg=highlight_low
-highlight LineNr    guifg=muted guibg=base
+highlight LineNr        guifg=muted guibg=base
+highlight StatusLine    guifg=iris guibg=highlight_low cterm=bold gui=bold term=bold
+highlight StatusLineNC  guifg=text guibg=base          cterm=none gui=none term=none
+highlight Folded        guifg=iris guibg=highlight_low cterm=none gui=none term=none
+highlight VertSplit     guifg=highlight_low guibg=iris
+highlight TabLine       term=underline cterm=underline gui=underline guibg=highlight_med
+highlight TabLineFill   term=underline cterm=underline gui=underline guibg=highlight_med
+highlight TabLineSel    term=bold cterm=bold gui=bold
 
 " highlight CursorLine
 " VertSplit TabLine TabLineFill
