@@ -51,7 +51,6 @@ endif
 highlight Normal      guifg=text guibg=base
 
 " Language features
-highlight Type        guifg=text guibg=base
 highlight String      guifg=text guibg=base
 highlight Character   guifg=text guibg=base
 highlight Number      guifg=text guibg=base
@@ -61,6 +60,9 @@ highlight Constant    guifg=text guibg=base
 highlight PreProc     guifg=text guibg=base
 highlight Statement   guifg=text guibg=base
 highlight Identifier  guifg=text guibg=base
+highlight Type        guifg=text guibg=base
+highlight PreProc     guifg=text guibg=base
+highlight Special     guifg=text guibg=base
 
 highlight Special     guifg=foam guibg=base
 
