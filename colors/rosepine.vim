@@ -74,7 +74,7 @@ highlight lCursor     guifg=text guifg=rose
 highlight ColorColumn guifg=text guibg=highlight_low
 
 highlight Search      guifg=base guibg=foam
-highlight CurSearch   guifg=text guibg=pine
+highlight CurSearch   guifg=base guibg=pine
 
 " Errors
 highlight SpellBad    guifg=rose guibg=base
