@@ -75,6 +75,7 @@ highlight PmenuSel    guifg=text  guibg=highlight_med
 highlight Cursor      guifg=text guifg=rose
 highlight lCursor     guifg=text guifg=rose
 highlight ColorColumn guifg=text guibg=highlight_low
+highlight MatchParen  guifg=base guibg=gold term=none
 
 highlight Search      guifg=base guibg=foam
 highlight CurSearch   guifg=base guibg=pine
