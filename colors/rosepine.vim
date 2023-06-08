@@ -92,6 +92,13 @@ highlight CursorLineNr  term=none cterm=none guifg=text guibg=highlight_med
 highlight Comment   guifg=muted guibg=base
 highlight Todo      guifg=gold guibg=base cterm=underline gui=underline term=underline
 
+" Diffs
+highlight DiffAdd     term=bold guibg=base guifg=pine
+highlight DiffChange  term=bold guibg=base guifg=gold
+highlight DiffDelete  term=bold guibg=base guifg=love
+highlight diffAdded   term=bold guibg=base guifg=pine
+highlight diffRemoved term=bold guibg=base guifg=love
+
 " Windowing
 highlight LineNr        guifg=muted guibg=base
 highlight StatusLine    guifg=iris guibg=highlight_low cterm=bold gui=bold term=bold
