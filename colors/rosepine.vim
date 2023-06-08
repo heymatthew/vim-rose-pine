@@ -72,11 +72,11 @@ highlight PMenu       guifg=muted guibg=highlight_low
 highlight PmenuSel    guifg=text  guibg=highlight_med
 
 " Curosor, boundaries and columns
-highlight Cursor      guifg=text guifg=rose
-highlight lCursor     guifg=text guifg=rose
+" highlight Cursor      guifg=text guifg=gold
+" highlight lCursor     guifg=text guifg=gold
 highlight ColorColumn guifg=text guibg=highlight_low
-highlight MatchParen  guifg=base guibg=gold term=none
-highlight Visual      ctermbg=242 guibg=gold guifg=base
+highlight MatchParen  guifg=base guibg=iris term=none
+highlight Visual      guibg=gold guifg=base
 highlight Search      guifg=base guibg=foam
 highlight CurSearch   guifg=base guibg=pine
 
