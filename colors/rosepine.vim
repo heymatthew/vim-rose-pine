@@ -81,9 +81,12 @@ highlight Search      guifg=base guibg=foam
 highlight CurSearch   guifg=base guibg=pine
 
 " Errors
-highlight SpellBad    guifg=rose guibg=base cterm=underline gui=underline term=underline
-highlight ErrorMsg    guifg=rose guibg=base cterm=underline gui=underline term=underline
-highlight Error       guifg=rose guibg=base cterm=underline gui=underline term=underline
+highlight SpellBad      guifg=rose guibg=base cterm=underline gui=underline term=underline
+highlight ErrorMsg      guifg=rose guibg=base cterm=underline gui=underline term=underline
+highlight Error         guifg=rose guibg=base cterm=underline gui=underline term=underline
+highlight CursorLine    term=none cterm=none guifg=text guibg=highlight_med
+highlight CursorColumn  term=none cterm=none guifg=text guibg=highlight_med
+highlight CursorLineNr  term=none cterm=none guifg=text guibg=highlight_med
 
 " Comments
 highlight Comment   guifg=muted guibg=base
