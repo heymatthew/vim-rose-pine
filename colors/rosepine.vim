@@ -108,6 +108,7 @@ highlight VertSplit     guifg=highlight_low guibg=iris
 highlight TabLine       term=underline cterm=underline gui=underline guibg=highlight_med
 highlight TabLineFill   term=underline cterm=underline gui=underline guibg=highlight_med
 highlight TabLineSel    term=bold cterm=bold gui=bold
+highlight WildMenu      guifg=love guibg=base
 
 " Vim key highlights like <Enter> and <F1>
 highlight SpecialKey term=bold ctermfg=4 guifg=rose
