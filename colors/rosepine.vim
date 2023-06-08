@@ -76,7 +76,7 @@ highlight Cursor      guifg=text guifg=rose
 highlight lCursor     guifg=text guifg=rose
 highlight ColorColumn guifg=text guibg=highlight_low
 highlight MatchParen  guifg=base guibg=gold term=none
-
+highlight Visual      ctermbg=242 guibg=gold guifg=base
 highlight Search      guifg=base guibg=foam
 highlight CurSearch   guifg=base guibg=pine
 
