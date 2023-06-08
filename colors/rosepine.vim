@@ -99,6 +99,8 @@ highlight TabLine       term=underline cterm=underline gui=underline guibg=highl
 highlight TabLineFill   term=underline cterm=underline gui=underline guibg=highlight_med
 highlight TabLineSel    term=bold cterm=bold gui=bold
 
-" highlight CursorLine
-" VertSplit TabLine TabLineFill
-" TabLineSel
+" Vim key highlights like <Enter> and <F1>
+highlight SpecialKey term=bold ctermfg=4 guifg=rose
+
+" Squiggles at the bottom of the file
+highlight NonText term=bold ctermfg=12 gui=bold guifg=iris
