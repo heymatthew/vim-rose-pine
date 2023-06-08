@@ -10,16 +10,12 @@ Assumes you have [Vim Plug](https://github.com/junegunn/vim-plug) already.
 
 ```vim
 call plug#begin('~/.vim/plugged')
-Plug 'heymatthew/vim-rosepine'
+Plug 'heymatthew/vim-blinkenlights'
 call plug#end()
 ```
 
-# Rosé Pine for Vim
-
-All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
-
 ```vim
-colorscheme rosepine
+colorscheme blinkenlights
 set background=dark " ...moon varient
 set background=light " ...dawn varient
 ```
