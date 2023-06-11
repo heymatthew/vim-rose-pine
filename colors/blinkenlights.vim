@@ -1,11 +1,12 @@
 " Name:        Rosé Pine blinkenlights
 " Description: All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
-" Author:      Matthew Gray
+" Author:      Matthew B. Gray
 " License:     GPLv3
 " Version:     0.1
 " Website:     https://github.com/heymatthew/vim-rosepine
 
-let g:colors_name = "rosepine"
+let g:colors_name = "blinkenlights"
+
 highlight clear
 set termguicolors " truecolor s
 if exists("syntax_on")
