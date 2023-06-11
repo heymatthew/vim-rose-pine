@@ -5,13 +5,14 @@
 " Version:     0.1
 " Website:     https://github.com/heymatthew/vim-rosepine
 
-let g:colors_name = "blinkenlights"
-
 highlight clear
-set termguicolors " truecolor s
+
 if exists("syntax_on")
   syntax reset
 endif
+
+let g:colors_name = "blinkenlights"
+set termguicolors " true-color
 
 if &background == 'dark'
   " Rosé Pine Moon
