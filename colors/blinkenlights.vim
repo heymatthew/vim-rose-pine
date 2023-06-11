@@ -78,7 +78,7 @@ highlight PmenuSel    guifg=text  guibg=highlight_med
 " highlight lCursor     guifg=text guifg=gold
 highlight ColorColumn guifg=text guibg=highlight_low
 highlight MatchParen  guifg=base guibg=iris term=none
-highlight Visual      guibg=highlight_med guifg=gold
+highlight Visual      guibg=highlight_med guifg=love
 highlight Search      guifg=base guibg=foam
 highlight CurSearch   guifg=base guibg=pine
 
