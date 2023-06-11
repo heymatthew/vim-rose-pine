@@ -117,3 +117,7 @@ highlight SpecialKey term=bold ctermfg=4 guifg=rose
 
 " Squiggles at the bottom of the file
 highlight NonText term=bold ctermfg=12 gui=bold guifg=iris
+
+" Things things that should stand out, that you don't want in code review
+match TrailingWhitespace /\s\+$/
+highlight TrailingWhitespace guibg=love
