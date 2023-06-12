@@ -98,6 +98,7 @@ highlight Todo      guifg=gold guibg=base cterm=underline gui=underline term=und
 highlight DiffAdd     term=bold guibg=base guifg=pine
 highlight DiffChange  term=bold guibg=base guifg=gold
 highlight DiffDelete  term=bold guibg=base guifg=love
+highlight DiffText    term=bold guibg=base guifg=love
 highlight diffAdded   term=bold guibg=base guifg=pine
 highlight diffRemoved term=bold guibg=base guifg=love
 
