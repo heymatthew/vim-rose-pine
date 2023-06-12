@@ -79,8 +79,8 @@ highlight PmenuSel    guifg=text  guibg=highlight_med
 highlight ColorColumn guifg=text guibg=highlight_low
 highlight MatchParen  guifg=base guibg=iris term=none
 highlight Visual      guibg=highlight_med guifg=love
-highlight Search      guifg=base guibg=foam
-highlight CurSearch   guifg=base guibg=pine
+highlight Search      guifg=base guibg=rose
+highlight CurSearch   guifg=base guibg=love
 
 " Errors
 highlight SpellBad      guifg=rose guibg=base cterm=underline gui=underline term=underline
