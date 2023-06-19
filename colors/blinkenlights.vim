@@ -113,6 +113,9 @@ highlight TabLineFill   term=underline cterm=underline gui=underline guibg=highl
 highlight TabLineSel    term=bold cterm=bold gui=bold
 highlight WildMenu      guifg=love guibg=base
 
+" Column with linting suggestions
+highlight SignColumn guibg=highlight_low
+
 " Vim key highlights like <Enter> and <F1>
 highlight SpecialKey term=bold ctermfg=4 guifg=rose
 
