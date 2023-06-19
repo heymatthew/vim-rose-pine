@@ -120,5 +120,6 @@ highlight SpecialKey term=bold ctermfg=4 guifg=rose
 highlight NonText term=bold ctermfg=12 gui=bold guifg=iris
 
 " Things things that should stand out, that you don't want in code review
-highlight TrailingWhitespace guibg=love
+" highlight TrailingWhitespace guibg=love cterm=underline
+highlight TrailingWhitespace guifg=love cterm=underline
 match TrailingWhitespace /\s\+$/
