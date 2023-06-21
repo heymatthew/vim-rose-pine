@@ -113,6 +113,9 @@ highlight TabLineFill   term=underline cterm=underline gui=underline guibg=highl
 highlight TabLineSel    term=bold cterm=bold gui=bold
 highlight WildMenu      guifg=love guibg=base
 
+" Markdown
+highlight Title term=bold guibg=base guifg=iris
+
 " Column with linting suggestions
 highlight SignColumn guibg=highlight_low
 
