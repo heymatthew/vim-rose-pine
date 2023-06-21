@@ -76,7 +76,7 @@ highlight PmenuSel    guifg=text  guibg=highlight_med
 " Curosor, boundaries and columns
 " highlight Cursor      guifg=text guifg=gold
 " highlight lCursor     guifg=text guifg=gold
-highlight ColorColumn guifg=text guibg=highlight_low
+highlight ColorColumn guibg=highlight_low
 highlight MatchParen  guifg=iris guibg=highlight_med term=none
 highlight Visual      guibg=highlight_med guifg=love
 highlight Search      guifg=base guibg=rose
