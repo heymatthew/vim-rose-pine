@@ -106,7 +106,7 @@ highlight diffRemoved term=bold guibg=base guifg=love
 " Windowing
 highlight LineNr        guifg=muted guibg=base
 highlight StatusLine    guifg=iris guibg=highlight_low cterm=bold gui=bold term=bold
-highlight StatusLineNC  guifg=text guibg=base          cterm=none gui=none term=none
+highlight StatusLineNC  guifg=iris guibg=highlight_low cterm=none gui=none term=none
 highlight Folded        guifg=iris guibg=highlight_low cterm=none gui=none term=none
 highlight VertSplit     guifg=highlight_low guibg=iris
 highlight TabLine       term=underline cterm=underline gui=underline guibg=highlight_med
