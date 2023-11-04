@@ -80,8 +80,8 @@ highlight PmenuSel    guifg=text  guibg=highlight_med
 highlight ColorColumn guibg=highlight_low
 highlight MatchParen  guifg=iris guibg=highlight_med term=none
 highlight Visual      guibg=highlight_med guifg=love
-highlight Search      term=bold guifg=text guibg=highlight_med
-highlight CurSearch   term=bold guifg=base guibg=love
+highlight Search      guifg=base guibg=rose
+highlight CurSearch   guifg=base guibg=love
 
 " Errors
 highlight SpellBad      guifg=rose guibg=base cterm=underline gui=underline term=underline
