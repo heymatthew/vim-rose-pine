@@ -93,7 +93,7 @@ highlight CursorLineNr  term=none cterm=none guifg=text guibg=highlight_med
 
 " Comments
 highlight Comment   guifg=muted guibg=base
-highlight Todo      guifg=gold guibg=base cterm=underline gui=underline term=underline
+highlight Todo      guifg=foam guibg=base cterm=underline gui=underline term=underline
 
 " Diffs
 highlight DiffAdd     term=bold guibg=base guifg=pine
@@ -107,7 +107,7 @@ highlight diffRemoved term=bold guibg=base guifg=love
 highlight LineNr        guifg=muted guibg=base
 highlight StatusLine    guifg=iris guibg=highlight_low cterm=bold gui=bold term=bold
 highlight StatusLineNC  guifg=iris guibg=highlight_low cterm=none gui=none term=none
-highlight Folded        guifg=love guibg=background cterm=none gui=none term=none
+highlight Folded        guifg=rose guibg=background cterm=none gui=none term=none
 highlight VertSplit     guifg=highlight_low guibg=iris
 highlight TabLine       term=underline cterm=underline gui=underline guibg=highlight_med
 highlight TabLineFill   term=underline cterm=underline gui=underline guibg=highlight_med
