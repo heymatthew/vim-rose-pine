@@ -52,18 +52,17 @@ endif
 
 highlight Normal      guifg=text guibg=base
 
-" Language features
-highlight String      guifg=text guibg=base
-highlight Character   guifg=text guibg=base
-highlight Number      guifg=text guibg=base
-highlight Boolean     guifg=text guibg=base
-highlight Float       guifg=text guibg=base
+" String, Character, Number, Boolean, Float...
 highlight Constant    guifg=text guibg=base
-highlight PreProc     guifg=text guibg=base
+" func, return, if, then, else, endif, switch
 highlight Statement   guifg=text guibg=base
-highlight Identifier  guifg=text guibg=base
+" classes, structs, int, long, char
 highlight Type        guifg=text guibg=base
+" include, define, macro, precondit
 highlight PreProc     guifg=text guibg=base
+" function or method names
+highlight Identifier  guifg=text guibg=base
+" tag, delimiter, debug statements, code in comments
 highlight Special     guifg=text guibg=base
 
 " Navigation elements
