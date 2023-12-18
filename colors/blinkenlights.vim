@@ -14,6 +14,14 @@ endif
 let g:colors_name = "blinkenlights"
 set termguicolors " true-color
 
+" The docs recommend you keep user preferences for colours like:
+" call extend(v:colornames, { 'base': '#232136' }, 'keep')
+"
+" However this theme deliberately does not extend and keep colours
+" because we expect our users to switch background and this script must set
+" colours when this happens:
+" :set background=light
+" :set background=dark
 if &background == 'dark'
   " Rosé Pine Moon
   let v:colornames['base'] = '#232136'
