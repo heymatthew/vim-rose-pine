@@ -40,8 +40,10 @@ if &background == 'dark'
   let v:colornames['highlight_med'] = '#44415a'
   let v:colornames['highlight_high'] = '#56526e'
 else
-  " Rosé Pine Dawn
-  let v:colornames['base'] = '#faf4ed'
+  " Mashing up Rosé Pine Dawn
+  " and https://maggieappleton.com/garden
+  " let v:colornames['base'] = '#faf4ed'
+  let v:colornames['base'] = '#f6f5f1'
   let v:colornames['surface'] = '#fffaf3'
   let v:colornames['overlay'] = '#f2e9e1'
   let v:colornames['muted'] = '#9893a5'
