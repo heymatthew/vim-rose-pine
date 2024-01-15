@@ -1,4 +1,4 @@
-" Name:        Rosé Pine blinkenlights
+" Name:        Blinkenlights
 " Description: All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 " Author:      Matthew B. Gray
 " License:     GPLv3
