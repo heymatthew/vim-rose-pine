@@ -23,22 +23,22 @@ set termguicolors " true-color
 " :set background=light
 " :set background=dark
 if &background == 'dark'
-  " Rosé Pine Moon
-  let v:colornames['base'] = '#232136'
-  let v:colornames['surface'] = '#2a273f'
-  let v:colornames['overlay'] = '#393552'
+  " Rosé Pine
+  let v:colornames['base'] = '#191724'
+  let v:colornames['surface'] = '#1f1d2e'
+  let v:colornames['overlay'] = '#26233a'
   let v:colornames['muted'] = '#6e6a86'
   let v:colornames['subtle'] = '#908caa'
   let v:colornames['text'] = '#e0def4'
   let v:colornames['love'] = '#eb6f92'
   let v:colornames['gold'] = '#f6c177'
-  let v:colornames['rose'] = '#ea9a97'
-  let v:colornames['pine'] = '#3e8fb0'
+  let v:colornames['rose'] = '#ebbcba'
+  let v:colornames['pine'] = '#31748f'
   let v:colornames['foam'] = '#9ccfd8'
   let v:colornames['iris'] = '#c4a7e7'
-  let v:colornames['highlight_low'] = '#2a283e'
-  let v:colornames['highlight_med'] = '#44415a'
-  let v:colornames['highlight_high'] = '#56526e'
+  let v:colornames['highlight_low'] = '#21202e'
+  let v:colornames['highlight_med'] = '#403d52'
+  let v:colornames['highlight_high'] = '#524f67'
 else
   " Rosé Pine Dawn
   let v:colornames['base'] = '#faf4ed'
