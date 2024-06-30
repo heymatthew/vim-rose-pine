@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 " Name:        Blinkenlights
 " Description: All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 " Author:      Matthew B. Gray
@@ -7,11 +9,11 @@
 
 highlight clear
 
-if exists("syntax_on")
+if exists('syntax_on')
   syntax reset
 endif
 
-let g:colors_name = "blinkenlights"
+let g:colors_name = 'blinkenlights'
 set termguicolors " true-color
 
 " The docs recommend you keep user preferences for colours like:
@@ -22,7 +24,7 @@ set termguicolors " true-color
 " colours when this happens:
 " :set background=light
 " :set background=dark
-if &background == 'dark'
+if &background ==# 'dark'
   " Rosé Pine
   let v:colornames['base'] = '#191724'
   let v:colornames['surface'] = '#1f1d2e'
