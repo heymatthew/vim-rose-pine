@@ -94,6 +94,9 @@ highlight CurSearch   guifg=base guibg=love
 
 " Errors
 highlight SpellBad      guifg=rose guibg=base cterm=underline gui=underline term=underline
+highlight SpellCap      guifg=rose guibg=base cterm=underline gui=underline term=underline
+highlight SpellLocal    guifg=rose guibg=base cterm=underline gui=underline term=underline
+highlight SpellRare     guifg=rose guibg=base cterm=underline gui=underline term=underline
 highlight ErrorMsg      guifg=rose guibg=base cterm=underline gui=underline term=underline
 highlight Error         guifg=rose guibg=base cterm=underline gui=underline term=underline
 highlight CursorLine    term=none cterm=none guifg=text guibg=highlight_med
