@@ -98,9 +98,9 @@ call Highlight('SpellBad',     { 'guifg': rose, 'guibg': base, 'cterm': 'underli
 call Highlight('SpellCap',     { 'guifg': rose, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
 call Highlight('SpellLocal',   { 'guifg': rose, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
 call Highlight('SpellRare',    { 'guifg': rose, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('CursorLine',   { 'term': 'none', 'cterm': 'none', 'guifg': 'text', 'guibg': highlight_med })
-call Highlight('CursorColumn', { 'term': 'none', 'cterm': 'none', 'guifg': 'text', 'guibg': highlight_med })
-call Highlight('CursorLineNr', { 'term': 'none', 'cterm': 'none', 'guifg': 'text', 'guibg': highlight_med })
+call Highlight('CursorLine',   { 'term': 'none', 'cterm': 'none', 'guifg': text, 'guibg': highlight_med })
+call Highlight('CursorColumn', { 'term': 'none', 'cterm': 'none', 'guifg': text, 'guibg': highlight_med })
+call Highlight('CursorLineNr', { 'term': 'none', 'cterm': 'none', 'guifg': text, 'guibg': highlight_med })
 
 " Comments
 call Highlight('Comment', { 'guifg': muted, 'guibg': base })
