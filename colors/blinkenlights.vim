@@ -1,11 +1,11 @@
 scriptencoding utf-8
 
 " Name:        Blinkenlights
-" Description: All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
+" Description: Diagnostic lights from old mainframe computers
 " Author:      Matthew B. Gray
 " License:     GPLv3
 " Version:     0.1
-" Website:     https://github.com/heymatthew/vim-rosepine
+" Website:     https://github.com/heymatthew/vim-blinkenlights
 
 highlight clear
 
