@@ -103,7 +103,7 @@ call Highlight('CursorColumn', { 'term': 'none', 'cterm': 'none', 'guifg': text,
 call Highlight('CursorLineNr', { 'term': 'none', 'cterm': 'none', 'guifg': text, 'guibg': highlight_med })
 
 " Comments
-call Highlight('Comment', { 'guifg': muted, 'guibg': base })
+call Highlight('Comment', { 'guifg': text, 'guibg': base })
 call Highlight('Todo',    { 'guifg': foam, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
 
 " Diffs
