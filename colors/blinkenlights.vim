@@ -22,39 +22,39 @@ if exists('v:colornames')
 endif
 
 if &background ==# 'dark'
-  " Rosé Pine
-  let base = '#191724'
-  let surface = '#1f1d2e'
-  let overlay = '#26233a'
-  let muted = '#6e6a86'
-  let subtle = '#908caa'
-  let text = '#e0def4'
-  let love = '#eb6f92'
-  let gold = '#f6c177'
-  let rose = '#ebbcba'
-  let pine = '#31748f'
-  let foam = '#9ccfd8'
-  let iris = '#c4a7e7'
-  let highlight_low = '#21202e'
-  let highlight_med = '#403d52'
-  let highlight_high = '#524f67'
+  " Rosé rp_Pine
+  let rp_base = '#191724'
+  let rp_surface = '#1f1d2e'
+  let rp_overlay = '#26233a'
+  let rp_muted = '#6e6a86'
+  let rp_subtle = '#908caa'
+  let rp_text = '#e0def4'
+  let rp_love = '#eb6f92'
+  let rp_gold = '#f6c177'
+  let rp_rose = '#ebbcba'
+  let rp_pine = '#31748f'
+  let rp_foam = '#9ccfd8'
+  let rp_iris = '#c4a7e7'
+  let rp_highlight_low = '#21202e'
+  let rp_highlight_med = '#403d52'
+  let rp_highlight_high = '#524f67'
 else
-  " Rosé Pine Dawn
-  let base = '#faf4ed'
-  let surface = '#fffaf3'
-  let overlay = '#f2e9e1'
-  let muted = '#9893a5'
-  let subtle = '#797593'
-  let text = '#575279'
-  let love = '#b4637a'
-  let gold = '#ea9d34'
-  let rose = '#d7827e'
-  let pine = '#286983'
-  let foam = '#56949f'
-  let iris = '#907aa9'
-  let highlight_low = '#f4ede8'
-  let highlight_med = '#dfdad9'
-  let highlight_high = '#cecacd'
+  " Rosé rp_Pine Dawn
+  let rp_base = '#faf4ed'
+  let rp_surface = '#fffaf3'
+  let rp_overlay = '#f2e9e1'
+  let rp_muted = '#9893a5'
+  let rp_subtle = '#797593'
+  let rp_text = '#575279'
+  let rp_love = '#b4637a'
+  let rp_gold = '#ea9d34'
+  let rp_rose = '#d7827e'
+  let rp_pine = '#286983'
+  let rp_foam = '#56949f'
+  let rp_iris = '#907aa9'
+  let rp_highlight_low = '#f4ede8'
+  let rp_highlight_med = '#dfdad9'
+  let rp_highlight_high = '#cecacd'
 endif
 
 " Highlight passes args to :highlight
@@ -66,77 +66,77 @@ function Highlight(group, args)
   execute printf('highlight %s %s', a:group, hl_args)
 endfunction
 
-call Highlight('Normal', { 'guifg': text, 'guibg': base })
+call Highlight('Normal', { 'guifg': rp_text, 'guibg': rp_base })
 
 " Programming statements
-call Highlight('Constant',   { 'guifg': text, 'guibg': base })
-call Highlight('Statement',  { 'guifg': text, 'guibg': base })
-call Highlight('Type',       { 'guifg': text, 'guibg': base })
-call Highlight('PreProc',    { 'guifg': text, 'guibg': base })
-call Highlight('Identifier', { 'guifg': text, 'guibg': base })
-call Highlight('Special',    { 'guifg': text, 'guibg': base })
+call Highlight('Constant',   { 'guifg': rp_text, 'guibg': rp_base })
+call Highlight('Statement',  { 'guifg': rp_text, 'guibg': rp_base })
+call Highlight('Type',       { 'guifg': rp_text, 'guibg': rp_base })
+call Highlight('PreProc',    { 'guifg': rp_text, 'guibg': rp_base })
+call Highlight('Identifier', { 'guifg': rp_text, 'guibg': rp_base })
+call Highlight('Special',    { 'guifg': rp_text, 'guibg': rp_base })
 
 " Navigation elements
-call Highlight('Directory',         { 'guifg': pine, 'guibg': base })
-call Highlight('helpHyperTextJump', { 'guifg': pine, 'guibg': base })
+call Highlight('Directory',         { 'guifg': rp_pine, 'guibg': rp_base })
+call Highlight('helpHyperrp_textJump', { 'guifg': rp_pine, 'guibg': rp_base })
 
 " Autocomplete menu
-call Highlight('PMenu',    { 'guifg': muted, 'guibg': highlight_low })
-call Highlight('PmenuSel', { 'guifg': text,  'guibg': highlight_med })
+call Highlight('PMenu',    { 'guifg': rp_muted, 'guibg': rp_highlight_low })
+call Highlight('PmenuSel', { 'guifg': rp_text,  'guibg': rp_highlight_med })
 
 " Curosor, boundaries and columns
-call Highlight('ColorColumn', { 'guibg': highlight_low })
-call Highlight('MatchParen',  { 'guifg': iris, 'guibg': highlight_med, 'term': 'none' })
-call Highlight('Visual',      { 'guibg': highlight_med, 'guifg': love })
-call Highlight('Search',      { 'guifg': base, 'guibg': rose })
-call Highlight('CurSearch',   { 'guifg': base, 'guibg': love })
+call Highlight('ColorColumn', { 'guibg': rp_highlight_low })
+call Highlight('MatchParen',  { 'guifg': rp_iris, 'guibg': rp_highlight_med, 'term': 'none' })
+call Highlight('Visual',      { 'guibg': rp_highlight_med, 'guifg': rp_love })
+call Highlight('Search',      { 'guifg': rp_base, 'guibg': rp_rose })
+call Highlight('CurSearch',   { 'guifg': rp_base, 'guibg': rp_love })
 
 " Errors
-call Highlight('Error',        { 'guifg': rose, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('ErrorMsg',     { 'guifg': rose, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('SpellBad',     { 'guifg': rose, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('SpellCap',     { 'guifg': rose, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('SpellLocal',   { 'guifg': rose, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('SpellRare',    { 'guifg': rose, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('CursorLine',   { 'term': 'none', 'cterm': 'none', 'guifg': text, 'guibg': highlight_med })
-call Highlight('CursorColumn', { 'term': 'none', 'cterm': 'none', 'guifg': text, 'guibg': highlight_med })
-call Highlight('CursorLineNr', { 'term': 'none', 'cterm': 'none', 'guifg': text, 'guibg': highlight_med })
+call Highlight('Error',        { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+call Highlight('ErrorMsg',     { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+call Highlight('SpellBad',     { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+call Highlight('SpellCap',     { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+call Highlight('SpellLocal',   { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+call Highlight('SpellRare',    { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+call Highlight('CursorLine',   { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
+call Highlight('CursorColumn', { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
+call Highlight('CursorLineNr', { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
 
 " Comments
-call Highlight('Comment', { 'guifg': text, 'guibg': base })
-call Highlight('Todo',    { 'guifg': foam, 'guibg': base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+call Highlight('Comment', { 'guifg': rp_text, 'guibg': rp_base })
+call Highlight('Todo',    { 'guifg': rp_foam, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
 
 " Diffs
-call Highlight('DiffAdd',     { 'term': 'bold', 'guibg': base, 'guifg': pine })
-call Highlight('DiffChange',  { 'term': 'bold', 'guibg': base, 'guifg': gold })
-call Highlight('DiffDelete',  { 'term': 'bold', 'guibg': base, 'guifg': love })
-call Highlight('DiffText',    { 'term': 'bold', 'guibg': base, 'guifg': love })
-call Highlight('diffAdded',   { 'term': 'bold', 'guibg': base, 'guifg': pine })
-call Highlight('diffRemoved', { 'term': 'bold', 'guibg': base, 'guifg': love })
+call Highlight('DiffAdd',     { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_pine })
+call Highlight('DiffChange',  { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_gold })
+call Highlight('DiffDelete',  { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_love })
+call Highlight('Diffrp_text',    { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_love })
+call Highlight('diffAdded',   { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_pine })
+call Highlight('diffRemoved', { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_love })
 
 " Windowing
-call Highlight('LineNr',       { 'guifg': muted, 'guibg': base })
-call Highlight('StatusLine',   { 'guifg': iris, 'guibg': highlight_low, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
-call Highlight('StatusLineNC', { 'guifg': iris, 'guibg': highlight_low, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
-call Highlight('Folded',       { 'guifg': rose, 'guibg': base, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
-call Highlight('VertSplit',    { 'guifg': highlight_med, 'guibg': highlight_low })
-call Highlight('TabLine',      { 'term': 'underline', 'cterm': 'underline', 'gui': 'underline', 'guibg': highlight_med })
-call Highlight('TabLineFill',  { 'term': 'underline', 'cterm': 'underline', 'gui': 'underline', 'guibg': highlight_med })
+call Highlight('LineNr',       { 'guifg': rp_muted, 'guibg': rp_base })
+call Highlight('StatusLine',   { 'guifg': rp_iris, 'guibg': rp_highlight_low, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
+call Highlight('StatusLineNC', { 'guifg': rp_iris, 'guibg': rp_highlight_low, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
+call Highlight('Folded',       { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
+call Highlight('VertSplit',    { 'guifg': rp_highlight_med, 'guibg': rp_highlight_low })
+call Highlight('TabLine',      { 'term': 'underline', 'cterm': 'underline', 'gui': 'underline', 'guibg': rp_highlight_med })
+call Highlight('TabLineFill',  { 'term': 'underline', 'cterm': 'underline', 'gui': 'underline', 'guibg': rp_highlight_med })
 call Highlight('TabLineSel',   { 'term': 'bold', 'cterm': 'bold', 'gui': 'bold' })
-call Highlight('WildMenu',     { 'guifg': love, 'guibg': base })
+call Highlight('WildMenu',     { 'guifg': rp_love, 'guibg': rp_base })
 
 " Markdown
-call Highlight('Title', { 'term': 'bold', 'guibg': base, 'guifg': iris })
+call Highlight('Title', { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_iris })
 
 " Column with linting suggestions
-call Highlight('SignColumn', { 'guibg': highlight_low })
+call Highlight('SignColumn', { 'guibg': rp_highlight_low })
 
 " Vim key highlights like <Enter> and <F1>
-call Highlight('SpecialKey', { 'term': 'bold', 'ctermfg': 4, 'guifg': rose })
+call Highlight('SpecialKey', { 'term': 'bold', 'ctermfg': 4, 'guifg': rp_rose })
 
 " Squiggles at the bottom of the file
-call Highlight('NonText', { 'term': 'bold', 'ctermfg': 12, 'gui': 'bold', 'guifg': iris })
+call Highlight('Nonrp_text', { 'term': 'bold', 'ctermfg': 12, 'gui': 'bold', 'guifg': rp_iris })
 
 " Things things that should stand out, that you don't want in code review
-call Highlight('TrailingWhitespace', { 'guifg': love, 'cterm': 'underline' })
+call Highlight('TrailingWhitespace', { 'guifg': rp_love, 'cterm': 'underline' })
 match TrailingWhitespace /\s\+$/
