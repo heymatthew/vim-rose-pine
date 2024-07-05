@@ -61,20 +61,28 @@ endif
 " e.g. call Highlight('Normal', {'a': 1, 'b': 2})
 "   ~> :highlight Normal a=1 b=2
 function Highlight(group, args)
+  let hl_args = deepcopy(a:args)
   let hl_args = map(a:args, { k, v -> printf('%s=%s', k, v) })
   let hl_args = join(values(hl_args), ' ')
   execute printf('highlight %s %s', a:group, hl_args)
 endfunction
 
-call Highlight('Normal', { 'guifg': rp_text, 'guibg': rp_base })
+function s:format(asHash)
+  let asStrings = map(a:asHash, { k, v -> printf('%s=%s', k, v) })
+  return join(values(asStrings), ' ')
+endfunction
+
+let text = s:format({ 'guifg': rp_text, 'guibg': rp_base })
+
+execute 'highlight Normal ' . text
 
 " Programming statements
-call Highlight('Constant',   { 'guifg': rp_text, 'guibg': rp_base })
-call Highlight('Statement',  { 'guifg': rp_text, 'guibg': rp_base })
-call Highlight('Type',       { 'guifg': rp_text, 'guibg': rp_base })
-call Highlight('PreProc',    { 'guifg': rp_text, 'guibg': rp_base })
-call Highlight('Identifier', { 'guifg': rp_text, 'guibg': rp_base })
-call Highlight('Special',    { 'guifg': rp_text, 'guibg': rp_base })
+execute 'highlight Constant ' . text
+execute 'highlight Statement ' . text
+execute 'highlight Type ' . text
+execute 'highlight PreProc ' . text
+execute 'highlight Identifier ' . text
+execute 'highlight Special ' . text
 
 " Navigation elements
 call Highlight('Directory',         { 'guifg': rp_pine, 'guibg': rp_base })
@@ -103,7 +111,7 @@ call Highlight('CursorColumn', { 'term': 'none', 'cterm': 'none', 'guifg': rp_te
 call Highlight('CursorLineNr', { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
 
 " Comments
-call Highlight('Comment', { 'guifg': rp_text, 'guibg': rp_base })
+execute 'highlight Comment ' . text
 call Highlight('Todo',    { 'guifg': rp_foam, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
 
 " Diffs
