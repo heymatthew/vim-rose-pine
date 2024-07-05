@@ -73,6 +73,7 @@ function s:format(asHash)
 endfunction
 
 let text = s:format({ 'guifg': rp_text, 'guibg': rp_base })
+let subtle_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base })
 
 execute 'highlight Normal ' . text
 
@@ -123,7 +124,7 @@ call Highlight('diffAdded',   { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_pi
 call Highlight('diffRemoved', { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_love })
 
 " Windowing
-call Highlight('LineNr',       { 'guifg': rp_muted, 'guibg': rp_base })
+execute 'highlight LineNr ' . subtle_text
 call Highlight('StatusLine',   { 'guifg': rp_iris, 'guibg': rp_highlight_low, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
 call Highlight('StatusLineNC', { 'guifg': rp_iris, 'guibg': rp_highlight_low, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
 call Highlight('Folded',       { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
