@@ -76,6 +76,7 @@ let text = s:format({ 'guifg': rp_text, 'guibg': rp_base })
 let subtle_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base })
 
 execute 'highlight Normal ' . text
+execute 'highlight NonText ' . subtle_text
 
 " Programming statements
 execute 'highlight Constant ' . text
