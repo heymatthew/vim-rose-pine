@@ -88,8 +88,9 @@ execute 'highlight Identifier ' . text
 execute 'highlight Special ' . text
 
 " Navigation elements
-call Highlight('Directory',         { 'guifg': rp_pine, 'guibg': rp_base })
-call Highlight('helpHyperrp_textJump', { 'guifg': rp_pine, 'guibg': rp_base })
+execute 'highlight Directory ' . text
+execute 'highlight helpStar ' . subtle_text
+execute 'highlight helpBar ' . subtle_text
 
 " Autocomplete menu
 call Highlight('PMenu',    { 'guifg': rp_muted, 'guibg': rp_highlight_low })
