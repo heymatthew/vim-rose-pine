@@ -34,7 +34,6 @@ if &background ==# 'dark'
   let rp_rose = '#ebbcba'
   let rp_pine = '#31748f'
   let rp_foam = '#9ccfd8'
-  let rp_iris = '#c4a7e7'
   let rp_highlight_low = '#21202e'
   let rp_highlight_med = '#403d52'
   let rp_highlight_high = '#524f67'
@@ -51,7 +50,6 @@ else
   let rp_rose = '#d7827e'
   let rp_pine = '#286983'
   let rp_foam = '#56949f'
-  let rp_iris = '#907aa9'
   let rp_highlight_low = '#f4ede8'
   let rp_highlight_med = '#dfdad9'
   let rp_highlight_high = '#cecacd'
@@ -75,7 +73,7 @@ endfunction
 let text = s:format({ 'guifg': rp_text, 'guibg': rp_base })
 let subtle_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base })
 let error_text = s:format({ 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-let active_window_text = s:format({ 'guifg': rp_iris, 'guibg': rp_highlight_med, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
+let active_window_text = s:format({ 'guifg': rp_text, 'guibg': rp_highlight_med, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
 let subtle_window_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
 
 execute 'highlight Normal ' . text
@@ -99,7 +97,7 @@ call Highlight('PmenuSel', { 'guifg': rp_text,  'guibg': rp_highlight_med })
 
 " Curosor, boundaries and columns
 call Highlight('ColorColumn', { 'guibg': rp_highlight_low })
-call Highlight('MatchParen',  { 'guifg': rp_iris, 'guibg': rp_highlight_med, 'term': 'none' })
+call Highlight('MatchParen',  { 'guifg': rp_text, 'guibg': rp_highlight_med, 'term': 'none' })
 call Highlight('Visual',      { 'guibg': rp_highlight_med, 'guifg': rp_love })
 call Highlight('Search',      { 'guifg': rp_base, 'guibg': rp_rose })
 call Highlight('CurSearch',   { 'guifg': rp_base, 'guibg': rp_love })
@@ -140,7 +138,7 @@ execute 'highlight TabLineFill ' . subtle_window_text
 execute 'highlight TabLineSel ' . active_window_text
 
 " Markdown
-call Highlight('Title', { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_iris })
+call Highlight('Title', { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_text })
 
 " Column with linting suggestions
 call Highlight('SignColumn', { 'guibg': rp_highlight_low })
@@ -149,7 +147,7 @@ call Highlight('SignColumn', { 'guibg': rp_highlight_low })
 call Highlight('SpecialKey', { 'term': 'bold', 'ctermfg': 4, 'guifg': rp_rose })
 
 " Squiggles at the bottom of the file
-call Highlight('Nonrp_text', { 'term': 'bold', 'ctermfg': 12, 'gui': 'bold', 'guifg': rp_iris })
+execute 'highlight Nonrp_text ' . subtle_text
 
 " Things things that should stand out, that you don't want in code review
 call Highlight('TrailingWhitespace', { 'guifg': rp_love, 'cterm': 'underline' })
