@@ -74,6 +74,7 @@ endfunction
 
 let text = s:format({ 'guifg': rp_text, 'guibg': rp_base })
 let subtle_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base })
+let error_text = s:format({ 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
 
 execute 'highlight Normal ' . text
 execute 'highlight NonText ' . subtle_text
@@ -102,12 +103,13 @@ call Highlight('Search',      { 'guifg': rp_base, 'guibg': rp_rose })
 call Highlight('CurSearch',   { 'guifg': rp_base, 'guibg': rp_love })
 
 " Errors
-call Highlight('Error',        { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('ErrorMsg',     { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('SpellBad',     { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('SpellCap',     { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('SpellLocal',   { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-call Highlight('SpellRare',    { 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+execute 'highlight Error ' . error_text
+execute 'highlight ErrorMsg ' . error_text
+execute 'highlight SpellBad ' . error_text
+execute 'highlight SpellCap ' . error_text
+execute 'highlight SpellLocal ' . error_text
+execute 'highlight SpellRare ' . error_text
+
 call Highlight('CursorLine',   { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
 call Highlight('CursorColumn', { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
 call Highlight('CursorLineNr', { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
