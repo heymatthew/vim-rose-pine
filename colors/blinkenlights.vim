@@ -73,7 +73,7 @@ endfunction
 let text = s:format({ 'guifg': rp_text, 'guibg': rp_base })
 let subtle_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base })
 let error_text = s:format({ 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-let active_window_text = s:format({ 'guifg': rp_text, 'guibg': rp_highlight_med, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
+let active_window_text = s:format({ 'guifg': rp_text, 'guibg': rp_highlight_low, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
 let subtle_window_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
 
 execute 'highlight Normal ' . text
