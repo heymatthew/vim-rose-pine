@@ -74,7 +74,8 @@ let text = s:format({ 'guifg': rp_text, 'guibg': rp_base })
 let subtle_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base })
 let error_text = s:format({ 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
 let active_window_text = s:format({ 'guifg': rp_text, 'guibg': rp_highlight_low, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
-let subtle_window_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
+let active_tab_text = s:format({ 'guifg': rp_text, 'guibg': rp_base, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
+let subtle_window_text = s:format({ 'guifg': rp_muted, 'guibg': rp_highlight_low, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
 
 execute 'highlight Normal ' . text
 execute 'highlight NonText ' . subtle_text
@@ -136,7 +137,7 @@ execute 'highlight Folded ' . subtle_text
 execute 'highlight VertSplit ' . subtle_window_text
 execute 'highlight TabLine ' . subtle_window_text
 execute 'highlight TabLineFill ' . subtle_window_text
-execute 'highlight TabLineSel ' . active_window_text
+execute 'highlight TabLineSel ' . active_tab_text
 
 " Markdown
 call Highlight('Title', { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_text })
