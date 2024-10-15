@@ -133,7 +133,7 @@ execute 'highlight LineNr ' . subtle_text
 execute 'highlight StatusLine ' . active_window_text
 execute 'highlight StatusLineNC ' . subtle_window_text
 execute 'highlight WildMenu ' . text
-execute 'highlight Folded ' . subtle_text
+execute 'highlight Folded ' . active_window_text
 execute 'highlight VertSplit ' . subtle_window_text
 execute 'highlight TabLine ' . subtle_window_text
 execute 'highlight TabLineFill ' . subtle_window_text
