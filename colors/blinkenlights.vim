@@ -87,6 +87,7 @@ execute 'highlight Type ' . text
 execute 'highlight PreProc ' . text
 execute 'highlight Identifier ' . text
 execute 'highlight Special ' . text
+execute 'highlight String ' . text
 
 " Navigation elements
 execute 'highlight Directory ' . text
