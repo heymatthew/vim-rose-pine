@@ -38,8 +38,9 @@ if &background ==# 'dark'
   let rp_highlight_med = '#403d52'
   let rp_highlight_high = '#524f67'
 else
-  " Rosé rp_Pine Dawn
-  let rp_base = '#faf4ed'
+  " Idea, Titania white?
+  " https://www.resene.co.nz/swatches/preview.php?chart=Resene%20Roof%20systems%20chart%20(2010)&brand=Resene&name=Titania
+  let rp_base = '#ffffff'
   let rp_surface = '#fffaf3'
   let rp_overlay = '#f2e9e1'
   let rp_muted = '#9893a5'
@@ -50,9 +51,9 @@ else
   let rp_rose = '#d7827e'
   let rp_pine = '#286983'
   let rp_foam = '#56949f'
-  let rp_highlight_low = '#f4ede8'
-  let rp_highlight_med = '#dfdad9'
-  let rp_highlight_high = '#cecacd'
+  let rp_highlight_low = '#f1f1f1'
+  let rp_highlight_med = '#eeeeee'
+  let rp_highlight_high = '#dddddd'
 endif
 
 " Highlight passes args to :highlight
