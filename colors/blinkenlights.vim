@@ -22,27 +22,29 @@ if exists('v:colornames')
 endif
 
 if &background ==# 'dark'
-  " Catppuccin Macchiato
-  " https://catppuccin.com/palette#flavor-macchiato
-  let bl_base = '#191724'
-  let bl_muted = '#6e6a86'
-  let bl_text = '#e0def4'
+  " Catppuccin Mocha
+  " https://catppuccin.com/palette#flavor-mocha
+  let bl_base = '#1e1e2e'
+  let bl_text = '#cdd6f4'
+  let bl_rose = '#f5e0dc'
+
   let bl_love = '#eb6f92'
+  let bl_muted = '#6e6a86'
   let bl_gold = '#f6c177'
-  let bl_rose = '#ebbcba'
   let bl_pine = '#31748f'
   let bl_foam = '#9ccfd8'
-  let bl_highlight_low = '#21202e'
+  let bl_highlight_low = '#181825'
   let bl_highlight_med = '#403d52'
 else
-  " Catppuccin Frappe
-  " https://catppuccin.com/palette#flavor-frappe
-  let bl_base = '#ffffff'
+  " Catppuccin Latte
+  " https://catppuccin.com/palette#flavor-latte
+  let bl_base = '#eff1f5'
+  let bl_text = '#4c4f69'
+  let bl_rose = '#dc8a78'
+
   let bl_muted = '#9893a5'
-  let bl_text = '#575279'
   let bl_love = '#b4637a'
   let bl_gold = '#ea9d34'
-  let bl_rose = '#d7827e'
   let bl_pine = '#286983'
   let bl_foam = '#56949f'
   let bl_highlight_low = '#f1f1f1'
