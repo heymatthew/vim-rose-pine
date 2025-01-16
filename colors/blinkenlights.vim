@@ -22,38 +22,38 @@ if exists('v:colornames')
 endif
 
 if &background ==# 'dark'
-  " Rosé rp_Pine
-  let rp_base = '#191724'
-  let rp_surface = '#1f1d2e'
-  let rp_overlay = '#26233a'
-  let rp_muted = '#6e6a86'
-  let rp_subtle = '#908caa'
-  let rp_text = '#e0def4'
-  let rp_love = '#eb6f92'
-  let rp_gold = '#f6c177'
-  let rp_rose = '#ebbcba'
-  let rp_pine = '#31748f'
-  let rp_foam = '#9ccfd8'
-  let rp_highlight_low = '#21202e'
-  let rp_highlight_med = '#403d52'
-  let rp_highlight_high = '#524f67'
+  " Rosé bl_Pine
+  let bl_base = '#191724'
+  let bl_surface = '#1f1d2e'
+  let bl_overlay = '#26233a'
+  let bl_muted = '#6e6a86'
+  let bl_subtle = '#908caa'
+  let bl_text = '#e0def4'
+  let bl_love = '#eb6f92'
+  let bl_gold = '#f6c177'
+  let bl_rose = '#ebbcba'
+  let bl_pine = '#31748f'
+  let bl_foam = '#9ccfd8'
+  let bl_highlight_low = '#21202e'
+  let bl_highlight_med = '#403d52'
+  let bl_highlight_high = '#524f67'
 else
   " Idea, Titania white?
   " https://www.resene.co.nz/swatches/preview.php?chart=Resene%20Roof%20systems%20chart%20(2010)&brand=Resene&name=Titania
-  let rp_base = '#ffffff'
-  let rp_surface = '#fffaf3'
-  let rp_overlay = '#f2e9e1'
-  let rp_muted = '#9893a5'
-  let rp_subtle = '#797593'
-  let rp_text = '#575279'
-  let rp_love = '#b4637a'
-  let rp_gold = '#ea9d34'
-  let rp_rose = '#d7827e'
-  let rp_pine = '#286983'
-  let rp_foam = '#56949f'
-  let rp_highlight_low = '#f1f1f1'
-  let rp_highlight_med = '#eeeeee'
-  let rp_highlight_high = '#dddddd'
+  let bl_base = '#ffffff'
+  let bl_surface = '#fffaf3'
+  let bl_overlay = '#f2e9e1'
+  let bl_muted = '#9893a5'
+  let bl_subtle = '#797593'
+  let bl_text = '#575279'
+  let bl_love = '#b4637a'
+  let bl_gold = '#ea9d34'
+  let bl_rose = '#d7827e'
+  let bl_pine = '#286983'
+  let bl_foam = '#56949f'
+  let bl_highlight_low = '#f1f1f1'
+  let bl_highlight_med = '#eeeeee'
+  let bl_highlight_high = '#dddddd'
 endif
 
 " Highlight passes args to :highlight
@@ -71,12 +71,12 @@ function s:format(asHash)
   return join(values(asStrings), ' ')
 endfunction
 
-let text = s:format({ 'guifg': rp_text, 'guibg': rp_base })
-let subtle_text = s:format({ 'guifg': rp_muted, 'guibg': rp_base })
-let error_text = s:format({ 'guifg': rp_rose, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
-let active_window_text = s:format({ 'guifg': rp_text, 'guibg': rp_highlight_low, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
-let active_tab_text = s:format({ 'guifg': rp_text, 'guibg': rp_base, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
-let subtle_window_text = s:format({ 'guifg': rp_muted, 'guibg': rp_highlight_low, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
+let text = s:format({ 'guifg': bl_text, 'guibg': bl_base })
+let subtle_text = s:format({ 'guifg': bl_muted, 'guibg': bl_base })
+let error_text = s:format({ 'guifg': bl_rose, 'guibg': bl_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+let active_window_text = s:format({ 'guifg': bl_text, 'guibg': bl_highlight_low, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
+let active_tab_text = s:format({ 'guifg': bl_text, 'guibg': bl_base, 'cterm': 'bold', 'gui': 'bold', 'term': 'bold' })
+let subtle_window_text = s:format({ 'guifg': bl_muted, 'guibg': bl_highlight_low, 'cterm': 'none', 'gui': 'none', 'term': 'none' })
 
 execute 'highlight Normal ' . text
 execute 'highlight NonText ' . subtle_text
@@ -96,15 +96,15 @@ execute 'highlight helpStar ' . subtle_text
 execute 'highlight helpBar ' . subtle_text
 
 " Autocomplete menu
-call Highlight('PMenu',    { 'guifg': rp_muted, 'guibg': rp_highlight_low })
-call Highlight('PmenuSel', { 'guifg': rp_text,  'guibg': rp_highlight_med })
+call Highlight('PMenu',    { 'guifg': bl_muted, 'guibg': bl_highlight_low })
+call Highlight('PmenuSel', { 'guifg': bl_text,  'guibg': bl_highlight_med })
 
 " Curosor, boundaries and columns
-call Highlight('ColorColumn', { 'guibg': rp_highlight_low })
-call Highlight('MatchParen',  { 'guifg': rp_text, 'guibg': rp_highlight_med, 'term': 'none' })
-call Highlight('Visual',      { 'guibg': rp_highlight_med, 'guifg': rp_love })
-call Highlight('Search',      { 'guifg': rp_base, 'guibg': rp_rose })
-call Highlight('CurSearch',   { 'guifg': rp_base, 'guibg': rp_love })
+call Highlight('ColorColumn', { 'guibg': bl_highlight_low })
+call Highlight('MatchParen',  { 'guifg': bl_text, 'guibg': bl_highlight_med, 'term': 'none' })
+call Highlight('Visual',      { 'guibg': bl_highlight_med, 'guifg': bl_love })
+call Highlight('Search',      { 'guifg': bl_base, 'guibg': bl_rose })
+call Highlight('CurSearch',   { 'guifg': bl_base, 'guibg': bl_love })
 
 " Errors
 execute 'highlight Error ' . error_text
@@ -114,21 +114,21 @@ execute 'highlight SpellCap ' . error_text
 execute 'highlight SpellLocal ' . error_text
 execute 'highlight SpellRare ' . error_text
 
-call Highlight('CursorLine',   { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
-call Highlight('CursorColumn', { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
-call Highlight('CursorLineNr', { 'term': 'none', 'cterm': 'none', 'guifg': rp_text, 'guibg': rp_highlight_med })
+call Highlight('CursorLine',   { 'term': 'none', 'cterm': 'none', 'guifg': bl_text, 'guibg': bl_highlight_med })
+call Highlight('CursorColumn', { 'term': 'none', 'cterm': 'none', 'guifg': bl_text, 'guibg': bl_highlight_med })
+call Highlight('CursorLineNr', { 'term': 'none', 'cterm': 'none', 'guifg': bl_text, 'guibg': bl_highlight_med })
 
 " Comments
 execute 'highlight Comment ' . text
-call Highlight('Todo',    { 'guifg': rp_foam, 'guibg': rp_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
+call Highlight('Todo',    { 'guifg': bl_foam, 'guibg': bl_base, 'cterm': 'underline', 'gui': 'underline', 'term': 'underline' })
 
 " Diffs
-call Highlight('DiffAdd',     { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_pine })
-call Highlight('DiffChange',  { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_gold })
-call Highlight('DiffDelete',  { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_love })
-call Highlight('Diffrp_text',    { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_love })
-call Highlight('diffAdded',   { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_pine })
-call Highlight('diffRemoved', { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_love })
+call Highlight('DiffAdd',     { 'term': 'bold', 'guibg': bl_base, 'guifg': bl_pine })
+call Highlight('DiffChange',  { 'term': 'bold', 'guibg': bl_base, 'guifg': bl_gold })
+call Highlight('DiffDelete',  { 'term': 'bold', 'guibg': bl_base, 'guifg': bl_love })
+call Highlight('Diffbl_text',    { 'term': 'bold', 'guibg': bl_base, 'guifg': bl_love })
+call Highlight('diffAdded',   { 'term': 'bold', 'guibg': bl_base, 'guifg': bl_pine })
+call Highlight('diffRemoved', { 'term': 'bold', 'guibg': bl_base, 'guifg': bl_love })
 
 " Windowing
 execute 'highlight LineNr ' . subtle_text
@@ -142,17 +142,17 @@ execute 'highlight TabLineFill ' . subtle_window_text
 execute 'highlight TabLineSel ' . active_tab_text
 
 " Markdown
-call Highlight('Title', { 'term': 'bold', 'guibg': rp_base, 'guifg': rp_text })
+call Highlight('Title', { 'term': 'bold', 'guibg': bl_base, 'guifg': bl_text })
 
 " Column with linting suggestions
-call Highlight('SignColumn', { 'guibg': rp_highlight_low })
+call Highlight('SignColumn', { 'guibg': bl_highlight_low })
 
 " Vim key highlights like <Enter> and <F1>
-call Highlight('SpecialKey', { 'term': 'bold', 'ctermfg': 4, 'guifg': rp_rose })
+call Highlight('SpecialKey', { 'term': 'bold', 'ctermfg': 4, 'guifg': bl_rose })
 
 " Squiggles at the bottom of the file
-execute 'highlight Nonrp_text ' . subtle_text
+execute 'highlight Nonbl_text ' . subtle_text
 
 " Things things that should stand out, that you don't want in code review
-call Highlight('TrailingWhitespace', { 'guifg': rp_love, 'cterm': 'underline' })
+call Highlight('TrailingWhitespace', { 'guifg': bl_love, 'cterm': 'underline' })
 match TrailingWhitespace /\s\+$/
